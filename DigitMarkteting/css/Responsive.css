@@ -1,0 +1,378 @@
+/* الهيدر */
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+/* القائمة */
+nav .menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* الأزرار */
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Dropdown arrow */
+.dropdown .arrow {
+  display: inline-block;
+  margin-left: 5px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+/* Hover Dropdown arrow */
+.dropdown:hover .arrow {
+  transform: rotate(-135deg);
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f6f6f6;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* زر الهامبرجر */
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+
+  nav .menu ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding-top: 80px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+  }
+
+  nav .menu ul.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* اجعل الأزرار تبقى مرئية فوق القائمة */
+ /* الاعدادات الافتراضية للـ buttons */
+.buttons {
+    order: 1;
+    margin-left: auto;
+    display: flex;
+    gap: 10px; /* مسافة بين الأزرار */
+}
+
+
+}
+@media screen and (max-width: 991px) {
+    .buttons {
+        flex-direction: column;  /* خلي الأزرار تحت بعض */             /* ياخدوا كامل عرض القائمة */
+            /* مسافة من فوق */
+    }
+
+    .buttons button {         /* كل زر ياخد العرض كامل */
+        text-align: center;     /* نص داخل الزر في الوسط */
+    }
+}
+/* container flex للسكشن */
+#hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  gap: 30px;
+}
+
+/* محتوى اليسار */
+#hero .for-content {
+  width: 70%;
+}
+
+/* نص الفقرة */
+#hero .left p {
+  color: #595555;
+  font-size: 17px;
+  width: 100%;
+  max-width: 455px;
+}
+
+/* الأزرار */
+.btnfor {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+/* carousel */
+.carsol {
+  width: 30%;
+}
+
+/* Responsive للشاشات المتوسطة والصغيرة */
+@media screen and (max-width: 991px) {
+  #hero .container {
+    flex-direction: column;   /* stack عمودي */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #hero .for-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  #hero .left p {
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
+
+  .btnfor {
+    flex-direction: column;  /* الأزرار تحت بعض */
+    width: 80%;
+    margin: 30px auto 0;
+  }
+
+  .btnfor button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .carsol {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .let-cards {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    width: 100% !important;
+  }
+
+  .card-one, .card-two, .card-three {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid-block-icon {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Section future */
+#future {
+    background: url(../images/banner5.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding: 100px 20px;
+    color: #ffffff;
+}
+
+#future::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url(../images/banner5.jpg) no-repeat center;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1;        
+}
+
+.future-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; /* مهم عشان يحترم الشاشات الصغيرة */
+}
+
+/* نص future-writing */
+.future-writing {
+    width: 45%;
+}
+
+.future-writing h6 {
+    color: #afafaf;
+    margin-bottom: 10px;
+}
+
+.future-writing h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.future-writing p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* future-circle */
+.future-circle {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* يسمح بالالتفاف */
+}
+
+/* individual circle */
+.future-circle .circle-one,
+.future-circle .circle-tow,
+.future-circle .circle-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.future-circle .circle {
+    height: 120px;
+    width: 120px;
+    border: 10px solid rgb(243, 78, 23);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* h4 under each circle */
+.future-circle h4 {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Responsive للشاشات المتوسطة */
+@media screen and (max-width: 991px) {
+    .future-writing {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .future-circle {
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+/* Responsive للشاشات الصغيرة */
+@media screen and (max-width: 576px) {
+    .future-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .future-circle {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .future-circle .circle-one,
+    .future-circle .circle-tow,
+    .future-circle .circle-three {
+        width: 100%;
+    }
+}
+/* سكشن Meeting */
+#meeting .cards-MET {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* يسمح بالالتفاف للشاشات الصغيرة */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#meeting .cards-MET .card-MET1,
+#meeting .cards-MET .card-MET2,
+#meeting .cards-MET .card-MET3 {
+    flex: 1 1 calc(33.333% - 20px); /* 3 بطاقات على الشاشات الكبيرة */
+    background-color: #fdfdfd; /* خلفية بسيطة */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#meeting .cards-MET img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+#meeting .cards-MET h3 {
+    margin: 10px 0;
+    color: #0b3d91;
+}
+
+#meeting .cards-MET p {
+    font-size: 16px;
+    color: #595555;
+    line-height: 1.6;
+}
+
+/* Responsive للشاشات المتوسطة */
+@media screen and (max-width: 991px) {
+    #meeting .cards-MET .card-MET1,
+    #meeting .cards-MET .card-MET2,
+    #meeting .cards-MET .card-MET3 {
+        flex: 1 1 calc(50% - 15px); /* عمودين */
+    }
+}
+
+/* Responsive للشاشات الصغيرة */
+@media screen and (max-width: 576px) {
+    #meeting .cards-MET {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #meeting .cards-MET .card-MET1,
+    #meeting .cards-MET .card-MET2,
+    #meeting .cards-MET .card-MET3 {
+        flex: 1 1 100%;
+        width: 100%;
+        text-align: center;
+    }
+}

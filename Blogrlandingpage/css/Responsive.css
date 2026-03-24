@@ -1,0 +1,147 @@
+@media(max-width:776px){
+  .container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .navbar .left {
+    width: 100%;
+    margin-top: 20px; 
+  }
+  .container .navbar .left select{
+    display: flex;
+    flex-direction:column;
+    width: 70%;
+    margin-left: 60px;
+  }
+  .container .navbar .left .record{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 10px;
+   margin-left: 60px;
+  }
+  .container .navbar .right{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .navbar .right .menu{
+    margin-left: 100px;
+    width: 50%;
+  } 
+   .container .navbar .right .menu .lost{
+    display: none;
+   }
+   .container .navbar .right .menu .list{
+    display: block;
+   } 
+    
+   #future .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column
+   }
+   #future .container .image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   /* #future .container .image-container img */
+   #future{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #future h3{
+    order: 1;
+  }
+
+  .image-container{
+    order: 2;
+  }
+
+  .firstone{
+    order: 3;
+  }
+
+  .secondone{
+    order: 4;
+  }
+
+  #future{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #future .container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .image-container{
+    width: 100%;
+  }
+
+  .image-container img{
+    width: 100%;
+    height: auto;
+  }
+
+#future .container .firstone{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+#future .container .secondone{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+#free .container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Arttttttt */
+   #Art .container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+    #Art .container img{
+      width: 300px;
+      height: 300px;
+      margin-bottom: 350px;
+      margin-left: -70px;
+    }
+    #Art .container .content{
+      width: 100%;
+     margin-left: px;
+      text-align: center;
+      margin-left: 20px;
+    }
+    }
+
+
+
+
+  

@@ -1,0 +1,294 @@
+.container {
+  width: 80%;
+  max-width: 1200px; 
+  margin: 0 auto;   
+  padding: 20px;
+}
+
+header{
+ background-color: hsl(355, 100%, 74%); 
+ 
+}
+.container .right{
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  width: 15%;
+}
+.container .right .logo a{
+  color: white;
+  text-decoration: none;
+}
+.container select{
+  background-color: hsl(355, 100%, 74%);
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.container .left{
+  display: flex;
+  width: 75%;
+  gap: 15px;
+  align-items: center;
+}
+.container .left .record{
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+ 
+.icon{
+  color:   hsl(237, 17%, 21%);;
+  font-size: 30px;
+  cursor: pointer;
+}
+.menu{
+   color:   hsl(237, 17%, 21%);;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+}
+.menu .list{
+  border: 0;
+  background-color: hsl(355, 100%, 74%);
+  height: auto;
+  width: auto;
+  cursor: pointer;
+ border-radius: 10px;
+ display: none;
+}
+.menu .lost{
+  border: 0;
+  background-color: hsl(355, 100%, 74%);
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 15px;
+  display: none;
+}
+.container .left button{
+  color:white
+}
+.container .left button:hover{
+  background-color: white;
+  color:  hsl(356, 100%, 66%);
+}
+/* heroooooooooo */
+ #hero {
+  background-image: url("./../images/bg-pattern-intro-desktop.svg");
+  background-size:auto;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: 0;
+  background-color: hsl(355, 100%, 74%);
+  height: 75vh;
+  width: 100%;
+  border-bottom-left-radius: 120px;
+  position: relative;
+}
+#hero .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+#hero .content h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+#hero .content p{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+#hero .bot a{
+  color: white;
+}
+#hero .bot a:hover{
+  background-color: white;
+  color:  hsl(356, 100%, 66%);
+}
+ /*the second section futureeeeeeeeeee  */
+#future{
+  width: 100%;
+  display: flex;
+}
+/* #future .container{
+  width: 55%;
+  padding-left: 100px;
+  margin-left: 150px;
+} */
+.image-container {
+  width: 45%;          /* أو عرض محدد مثلاً 600px */
+  overflow-x: hidden;   /* إخفاء الجزء الزائد */
+  position: relative;    /* إذا أردت استخدام position داخل الحاوية */
+}
+
+.moved-image {
+  display: block;        /* لتجنب مشاكل الهوامش */
+  transform: translateX(-7px); /* حرك الصورة 100 بكسل لليمين */
+   margin-top: 55px;
+}
+
+  #future h3{
+  color:  hsl(208, 49%, 24%);
+  font-size: 2.5rem;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  /* margin-left: 200px; */
+  text-align: center;
+ } 
+ #future .firstone{
+  width: 55%;
+  margin-top: 120px;
+  margin-bottom: 60px;
+ }
+ #future .secondone{
+  width: 55%;
+  margin-top: 60px;
+  margin-bottom: 120px;
+ }
+  #future  h5{
+  color:  hsl(208, 49%, 24%);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+ } 
+ #future p{
+  color:  hsl(208, 70%, 11%);
+  font-size: 1rem;
+  margin-bottom: 20px;
+} 
+ 
+/* state Art section */
+#Art{
+  background-image: url("./../images/bg-pattern-circles.svg");
+  background-size:auto;
+  background-position:left; 
+  background-repeat: no-repeat; 
+  z-index: 0;
+  background-color: hsl(237, 17%, 21%);
+  height: 50vh;
+  width: 100%;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 120px;
+  position: relative;
+  margin-top: 30px;
+}
+
+#Art .container{
+  display: flex;
+  flex-direction: row;
+}
+#Art img{
+position: absolute;
+bottom: -120px;
+}
+#Art .content{
+  color: antiquewhite;
+  margin: 120px 100px 0px 600px;
+}
+/* free section */
+#free{
+  display: flex;
+  width: 100%;
+  margin-top: 120px;
+}
+#free .image-free{
+ overflow-x: hidden;   /* إخفاء الجزء الزائد */
+  position: relative;
+  width: 45%;     
+}
+#free .image-free img{
+  transform: translateX(-280px);
+}
+#free .container{
+  align-items: center;
+  text-align: start;
+  width:55%;
+  padding-top: 180px;
+}
+#free .container div{
+  width: 65%;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+#free .container h5{
+ color:  hsl(208, 49%, 24%);
+  font-size: 1.5rem;
+  margin-bottom: 20px; 
+}
+#free .container p{
+  color:  hsl(208, 70%, 11%);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+/* footer  */
+footer{
+  background-color: hsl(237, 17%, 21%);
+  height: 45vh;
+  width: 100%;
+  border-top-right-radius: 120px;
+  margin-top: 120px;
+  text-align: start;
+  color: aliceblue;
+   padding: 50px;
+}
+footer .logo a{
+ color: white;
+  text-decoration: none; 
+} 
+footer .footer-grid{
+   display: grid;
+  grid-template-columns: 1fr repeat(3, 1fr); /* 4 أعمدة متساوية */
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-links h5 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.3rem;
+}
+
+.footer-links a {
+  color: #fcf2f2;
+  text-decoration: none;
+}
+.footer-links a:hover{
+   color: #426180;
+}
+.arrowUp{
+  position:fixed;
+  right: 20px;
+  bottom:20px;
+  color: white;
+  background-color: hsl(355, 100%, 74%);
+  padding: 10px;
+  border-radius: 30%;
+  cursor: pointer;
+  border: 0;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
